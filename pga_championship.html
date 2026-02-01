@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .cut-line {
+            border-top: 2px solid red;
+        }
+        .cut-text {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe6e6;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Spelare</th>
+                <th>Top20</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Scheffler, Scottie</td><td>1</td></tr>
+            <tr><td>2</td><td>English, Harris</td><td>1</td></tr>
+            <tr><td>2</td><td>DeChambeau, Bryson</td><td>1</td></tr>
+            <tr><td>2</td><td>Riley, Davis</td><td>1</td></tr>
+            <tr><td>5</td><td>Pendrith, Taylor</td><td>1</td></tr>
+            <tr><td>5</td><td>Vegas, Jhonattan</td><td>1</td></tr>
+            <tr><td>5</td><td>Poston, J.T.</td><td>1</td></tr>
+            <tr><td>8</td><td>Niemann, Joaquin</td><td>1</td></tr>
+            <tr><td>8</td><td>Griffin, Ben</td><td>1</td></tr>
+            <tr><td>8</td><td>McCarthy, Denny</td><td>1</td></tr>
+            <tr><td>8</td><td>Gerard, Ryan</td><td>1</td></tr>
+            <tr><td>8</td><td>Highsmith, Joe</td><td>1</td></tr>
+            <tr><td>8</td><td>Fitzpatrick, Matt</td><td>1</td></tr>
+            <tr><td>8</td><td>Bradley, Keegan</td><td>1</td></tr>
+            <tr><td>8</td><td>Rahm, Jon</td><td>1</td></tr>
+            <tr><td>8</td><td>Kim, Si Woo</td><td>1</td></tr>
+            <tr><td>17</td><td>Wallace, Matt</td><td>1</td></tr>
+            <tr><td>17</td><td>Noren, Alex</td><td>1</td></tr>
+            <tr><td>19</td><td>Burns, Sam</td><td>1</td></tr>
+            <tr><td>19</td><td>Conners, Corey</td><td>1</td></tr>
+            <tr><td>19</td><td>Hossler, Beau</td><td>1</td></tr>
+            <tr><td>19</td><td>Rai, Aaron</td><td>1</td></tr>
+            <tr><td>19</td><td>Hall, Harry</td><td>1</td></tr>
+            <tr><td>19</td><td>Moore, Taylor</td><td>1</td></tr>
+            <tr><td>19</td><td>Davis, Cam</td><td>1</td></tr>
+            <tr><td>19</td><td>Scott, Adam</td><td>1</td></tr>
+            <tr><td>19</td><td>Finau, Tony</td><td>1</td></tr>
+            <tr><td>28</td><td>Schauffele, Xander</td><td>0</td></tr>
+            <tr><td>28</td><td>Penge, Marco</td><td>0</td></tr>
+            <tr><td>28</td><td>Hovland, Viktor</td><td>0</td></tr>
+            <tr><td>28</td><td>Smalley, Alex</td><td>0</td></tr>
+            <tr><td>28</td><td>Fox, Ryan</td><td>0</td></tr>
+            <tr><td>33</td><td>Berger, Daniel</td><td>0</td></tr>
+            <tr><td>33</td><td>Olesen, Thorbjørn</td><td>0</td></tr>
+            <tr><td>33</td><td>McNealy, Maverick</td><td>0</td></tr>
+            <tr><td>33</td><td>Greyserman, Max</td><td>0</td></tr>
+            <tr><td>37</td><td>Bland, Richard</td><td>0</td></tr>
+            <tr><td>37</td><td>Spaun, J.J.</td><td>0</td></tr>
+            <tr><td>37</td><td>Hisatsune, Ryo</td><td>0</td></tr>
+            <tr><td>37</td><td>Glover, Lucas</td><td>0</td></tr>
+            <tr><td>41</td><td>Højgaard, Nicolai</td><td>0</td></tr>
+            <tr><td>41</td><td>Fleetwood, Tommy</td><td>0</td></tr>
+            <tr><td>41</td><td>Cole, Eric</td><td>0</td></tr>
+            <tr><td>41</td><td>Echavarria, Nico</td><td>0</td></tr>
+            <tr><td>41</td><td>Thorbjornsen, Michael</td><td>0</td></tr>
+            <tr><td>41</td><td>Pavon, Matthieu</td><td>0</td></tr>
+            <tr><td>47</td><td>McIlroy, Rory</td><td>0</td></tr>
+            <tr><td>47</td><td>Young, Cameron</td><td>0</td></tr>
+            <tr><td>47</td><td>MacIntyre, Robert</td><td>0</td></tr>
+            <tr><td>50</td><td>Yu, Kevin</td><td>0</td></tr>
+            <tr><td>50</td><td>Morikawa, Collin</td><td>0</td></tr>
+            <tr><td>50</td><td>Bezuidenhout, Christiaan</td><td>0</td></tr>
+            <tr><td>50</td><td>McKibbin, Tom</td><td>0</td></tr>
+            <tr><td>50</td><td>Clark, Wyndham</td><td>0</td></tr>
+            <tr><td>55</td><td>Kirk, Chris</td><td>0</td></tr>
+            <tr><td>55</td><td>Campbell, Brian</td><td>0</td></tr>
+            <tr><td>55</td><td>Kim, Michael</td><td>0</td></tr>
+            <tr><td>55</td><td>Campos, Rafael</td><td>0</td></tr>
+            <tr><td>55</td><td>Higgo, Garrick</td><td>0</td></tr>
+            <tr><td>60</td><td>Harman, Brian</td><td>0</td></tr>
+            <tr><td>60</td><td>Lower, Justin</td><td>0</td></tr>
+            <tr><td>60</td><td>Stevens, Sam</td><td>0</td></tr>
+            <tr><td>60</td><td>Donald, Luke</td><td>0</td></tr>
+            <tr><td>60</td><td>Homa, Max</td><td>0</td></tr>
+            <tr><td>60</td><td>Hatton, Tyrrell</td><td>0</td></tr>
+            <tr><td>60</td><td>Puig, David</td><td>0</td></tr>
+            <tr><td>67</td><td>Garcia, Sergio</td><td>0</td></tr>
+            <tr><td>67</td><td>Eckroat, Austin</td><td>0</td></tr>
+            <tr><td>67</td><td>Højgaard, Rasmus</td><td>0</td></tr>
+            <tr><td>70</td><td>Jaeger, Stephan</td><td>0</td></tr>
+            <tr><td>71</td><td>Kim, Tom</td><td>0</td></tr>
+            <tr><td>72</td><td>Cauley, Bud</td><td>0</td></tr>
+            <tr><td>72</td><td>Smylie, Elvis</td><td>0</td></tr>
+            <tr><td>74</td><td>An, Byeong Hun</td><td>0</td></tr>
+            <tr><td>75</td><td>Knapp, Jake</td><td>0</td></tr>
+            <tr><td>75</td><td>Spieth, Jordan</td><td>0</td></tr>
+            <tr><td>75</td><td>Hoge, Tom</td><td>0</td></tr>
+            <tr><td>75</td><td>Neergaard-Petersen, Rasmus</td><td>0</td></tr>
+            <tr><td>75</td><td>Harrington, Padraig</td><td>0</td></tr>
+            <tr><td>75</td><td>Kitayama, Kurt</td><td>0</td></tr>
+            <tr><td>75</td><td>Straka, Sepp</td><td>0</td></tr>
+            <tr><td>75</td><td>Lowry, Shane</td><td>0</td></tr>
+            <tr><td>75</td><td>Bhatia, Akshay</td><td>0</td></tr>
+            <tr><td>84</td><td>Mitchell, Keith</td><td>0</td></tr>
+            <tr><td>84</td><td>Norgaard, Niklas</td><td>0</td></tr>
+            <tr><td>84</td><td>Thomas, Justin</td><td>0</td></tr>
+            <tr><td>84</td><td>Aberg, Ludvig</td><td>0</td></tr>
+            <tr><td>84</td><td>Matsuyama, Hideki</td><td>0</td></tr>
+            <tr><td>84</td><td>Kanaya, Takumi</td><td>0</td></tr>
+            <tr><td>84</td><td>Lawrence, Thriston</td><td>0</td></tr>
+            <tr><td>84</td><td>Catlin, John</td><td>0</td></tr>
+            <tr><td>84</td><td>Perez, Victor</td><td>0</td></tr>
+            <tr><td>93</td><td>Reed, Patrick</td><td>0</td></tr>
+            <tr><td>93</td><td>McCarty, Matt</td><td>0</td></tr>
+            <tr><td>93</td><td>Woodland, Gary</td><td>0</td></tr>
+            <tr><td>93</td><td>Walker, Jimmy</td><td>0</td></tr>
+            <tr><td>93</td><td>Fishburn, Patrick</td><td>0</td></tr>
+            <tr><td>93</td><td>Power, Seamus</td><td>0</td></tr>
+            <tr><td>93</td><td>Fowler, Rickie</td><td>0</td></tr>
+            <tr><td>93</td><td>Detry, Thomas</td><td>0</td></tr>
+            <tr><td>93</td><td>Lee, Min Woo</td><td>0</td></tr>
+            <tr><td>93</td><td>Chacarra, Eugenio</td><td>0</td></tr>
+            <tr><td>103</td><td>Im, Sungjae</td><td>0</td></tr>
+            <tr><td>103</td><td>Nakajima, Keita</td><td>0</td></tr>
+            <tr><td>103</td><td>McGreevy, Max</td><td>0</td></tr>
+            <tr><td>103</td><td>van Tonder, Daniel</td><td>0</td></tr>
+            <tr><td>107</td><td>Bridgeman, Jacob</td><td>0</td></tr>
+            <tr><td>107</td><td>Zalatoris, Will</td><td>0</td></tr>
+            <tr><td>107</td><td>Taylor, Nick</td><td>0</td></tr>
+            <tr><td>107</td><td>Burmester, Dean</td><td>0</td></tr>
+            <tr><td>107</td><td>Thompson, Davis</td><td>0</td></tr>
+            <tr><td>107</td><td>Day, Jason</td><td>0</td></tr>
+            <tr><td>107</td><td>Cantlay, Patrick</td><td>0</td></tr>
+            <tr><td>107</td><td>Hodges, Lee</td><td>0</td></tr>
+            <tr><td>115</td><td>van Rooyen, Erik</td><td>0</td></tr>
+            <tr><td>115</td><td>Smith, Cameron</td><td>0</td></tr>
+            <tr><td>115</td><td>Keefer, John</td><td>0</td></tr>
+            <tr><td>118</td><td>Micheel, Shaun</td><td>0</td></tr>
+            <tr><td>118</td><td>Kaymer, Martin</td><td>0</td></tr>
+            <tr><td>118</td><td>Parry, John</td><td>0</td></tr>
+            <tr><td>118</td><td>Canter, Laurie</td><td>0</td></tr>
+            <tr><td>118</td><td>Novak, Andrew</td><td>0</td></tr>
+            <tr><td>118</td><td>Dunlap, Nick</td><td>0</td></tr>
+            <tr><td>124</td><td>Valimaki, Sami</td><td>0</td></tr>
+            <tr><td>124</td><td>Hughes, Mackenzie</td><td>0</td></tr>
+            <tr><td>124</td><td>Rodgers, Patrick</td><td>0</td></tr>
+            <tr><td>124</td><td>Collet, Tyler</td><td>0</td></tr>
+            <tr><td>124</td><td>Rose, Justin</td><td>0</td></tr>
+            <tr><td>124</td><td>Somers, John</td><td>0</td></tr>
+            <tr><td>124</td><td>Koepka, Brooks</td><td>0</td></tr>
+            <tr><td>124</td><td>Mickelson, Phil</td><td>0</td></tr>
+            <tr><td>132</td><td>Sowards, Bob</td><td>0</td></tr>
+            <tr><td>132</td><td>Kartrude, Michael</td><td>0</td></tr>
+            <tr><td>132</td><td>Steger, Eric</td><td>0</td></tr>
+            <tr><td>132</td><td>Henley, Russell</td><td>0</td></tr>
+            <tr><td>132</td><td>Johnson, Tom</td><td>0</td></tr>
+            <tr><td>137</td><td>Hadwin, Adam</td><td>0</td></tr>
+            <tr><td>137</td><td>Lenahan, Ryan</td><td>0</td></tr>
+            <tr><td>137</td><td>Vilips, Karl</td><td>0</td></tr>
+            <tr><td>137</td><td>Hoey, Rico</td><td>0</td></tr>
+            <tr><td>137</td><td>Droemer, Jesse</td><td>0</td></tr>
+            <tr><td>137</td><td>Newman, Dylan</td><td>0</td></tr>
+            <tr><td>143</td><td>Johnson, Dustin</td><td>0</td></tr>
+            <tr><td>143</td><td>Bingaman, Brandon</td><td>0</td></tr>
+            <tr><td>145</td><td>Dufner, Jason</td><td>0</td></tr>
+            <tr><td>145</td><td>Wiseman, Timothy</td><td>0</td></tr>
+            <tr><td>145</td><td>Hicks, Justin</td><td>0</td></tr>
+            <tr><td>145</td><td>Gates, Bobby</td><td>0</td></tr>
+            <tr><td>149</td><td>Bergstol, Brian</td><td>0</td></tr>
+            <tr><td>150</td><td>Block, Michael</td><td>0</td></tr>
+            <tr><td>151</td><td>Ishee, Nic</td><td>0</td></tr>
+            <tr><td>152</td><td>Gross, Larkin</td><td>0</td></tr>
+            <tr><td>153</td><td>Chi, Andre</td><td>0</td></tr>
+            <tr><td>153</td><td>Taylor, Rupe</td><td>0</td></tr>
+            <tr><td>155</td><td>Koch, Greg</td><td>0</td></tr>
+            <tr><td>156</td><td>Kizzire, Patton</td><td>0</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
